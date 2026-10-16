@@ -35,7 +35,7 @@ export function MermaidBlock({ code }: { code: string }) {
   return (
     <>
       <CodeBlock code={code} language="mermaid" />
-      {state.status === 'error' && <p className="au-reader-mermaid-error">Diagram error: {state.message}</p>}
+      {state.status === 'error' && <pre className="au-reader-mermaid-error">Diagram error: {state.message}</pre>}
     </>
   )
 }
